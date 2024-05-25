@@ -8,7 +8,7 @@ export default function LikeButton({ quoteId }: { quoteId: string }) {
 
     useEffect(() => {
         const likedQuotes: string[] =
-            JSON.parse(localStorage.getItem("likedQuotes") || "") || [];
+            JSON.parse(localStorage.getItem("likedQuotes")) || [];
 
         if (likedQuotes.includes(quoteId)) {
             setLiked(true);
@@ -19,7 +19,7 @@ export default function LikeButton({ quoteId }: { quoteId: string }) {
 
     const handleLike = () => {
         const likedQuotes =
-            JSON.parse(localStorage.getItem("likedQuotes") || "") || [];
+            JSON.parse(localStorage.getItem("likedQuotes")) || [];
         if (liked) {
             const updatedLikes = likedQuotes.filter(
                 (id: string) => id !== quoteId

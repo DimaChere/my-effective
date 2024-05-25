@@ -11,7 +11,7 @@ export default function LikedQuotes() {
     useEffect(() => {
         if (typeof window !== "undefined") {
             const likedQuotesIds =
-                JSON.parse(localStorage.getItem("likedQuotes") || "") || [];
+                JSON.parse(localStorage.getItem("likedQuotes")) || [];
 
             console.log(likedQuotesIds);
             fetchLikedQuotes(likedQuotesIds)
