@@ -7,8 +7,14 @@ export default function LikeButton({ quoteId }: { quoteId: string }) {
     const [liked, setLiked] = useState(false);
 
     useEffect(() => {
-        const likedQuotes: string[] =
-            JSON.parse(localStorage.getItem("likedQuotes")) || [];
+        let likedQuotes: string[] = [];
+        try {
+            likedQuotes = JSON.parse(
+                localStorage.getItem("likedQuotes") || "[]"
+            );
+        } catch (error) {
+            console.error("Error parsing JSON from localStorage", error);
+        }
 
         if (likedQuotes.includes(quoteId)) {
             setLiked(true);
@@ -18,8 +24,15 @@ export default function LikeButton({ quoteId }: { quoteId: string }) {
     }, [quoteId]);
 
     const handleLike = () => {
-        const likedQuotes =
-            JSON.parse(localStorage.getItem("likedQuotes")) || [];
+        let likedQuotes: string[] = [];
+        try {
+            likedQuotes = JSON.parse(
+                localStorage.getItem("likedQuotes") || "[]"
+            );
+        } catch (error) {
+            console.error("Error parsing JSON from localStorage", error);
+        }
+
         if (liked) {
             const updatedLikes = likedQuotes.filter(
                 (id: string) => id !== quoteId

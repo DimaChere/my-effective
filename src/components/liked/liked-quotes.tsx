@@ -10,10 +10,14 @@ export default function LikedQuotes() {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            const likedQuotesIds =
-                JSON.parse(localStorage.getItem("likedQuotes")) || [];
-
-            console.log(likedQuotesIds);
+            let likedQuotesIds: string[] = [];
+            try {
+                likedQuotesIds = JSON.parse(
+                    localStorage.getItem("likedQuotes") || "[]"
+                );
+            } catch (error) {
+                console.error("Error parsing JSON from localStorage", error);
+            }
             fetchLikedQuotes(likedQuotesIds)
                 .then((data) => {
                     setQuotes(data);
