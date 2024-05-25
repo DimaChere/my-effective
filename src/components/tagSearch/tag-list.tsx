@@ -28,9 +28,7 @@ export default function TagList({ tag }: { tag: string }) {
         if (existingTags && !existingTags.includes(newTag)) {
             existingTags.push(newTag);
             params.set("tags", existingTags.join(","));
-
-            console.log(`params: ${params}`);
-
+            params.set("page", "1");
             replace(`${pathname}?${params.toString()}`);
         }
     };

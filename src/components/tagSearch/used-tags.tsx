@@ -17,6 +17,7 @@ export default function UsedTags({ tags }: { tags: string }) {
             existingTags = existingTags.filter((t) => t !== tag);
             console.log(`params: ${existingTags}`);
             params.set("tags", existingTags.join(","));
+            params.set("page", "1");
             replace(`${pathname}?${params.toString()}`);
         }
     };
