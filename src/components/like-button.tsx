@@ -12,6 +12,8 @@ export default function LikeButton({ quoteId }: { quoteId: string }) {
 
         if (likedQuotes.includes(quoteId)) {
             setLiked(true);
+        } else {
+            setLiked(false);
         }
     }, [quoteId]);
 

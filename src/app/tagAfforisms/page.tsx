@@ -17,12 +17,12 @@ export default async function Page({
     const totalPages = await fetchQuotesPages(tags);
     return (
         <main className="max-w-[1080px] px-7 flex flex-1 flex-col gap-7 items-center mx-auto">
-            <form className="w-full flex flex-col items-center" method="GET">
+            <div className="w-full flex flex-col items-center">
                 <div className="flex gap-2">
                     <Search />
                     <UsedTags tags={tags} />
                 </div>
-            </form>
+            </div>
             <Quotes tags={tags} currentPage={currentPage} />
             <Pagination totalPages={totalPages} />
         </main>
