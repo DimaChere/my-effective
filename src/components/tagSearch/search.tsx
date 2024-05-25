@@ -1,12 +1,9 @@
 "use client";
 
 import { fetchTags, tagController } from "@/lib/data";
-import { Tags } from "@/lib/deffinitions";
-import { useRouter } from "next/router";
 import { ChangeEvent, Suspense, useEffect, useState } from "react";
-import TagList from "./tag-list";
+import TagList from "@/components/tagSearch/tag-list";
 import { useDebouncedCallback } from "use-debounce";
-import { TagListSketeton } from "../skeletons";
 
 export default function Search() {
     const [tag, setTag] = useState("");
@@ -26,10 +23,7 @@ export default function Search() {
                     onChange={(e) => handleSearch(e.target.value)}
                 />
             </label>
-            {/* <TagListSketeton></TagListSketeton> */}
-            <Suspense fallback={<TagListSketeton />}>
-                <TagList tag={tag} />
-            </Suspense>
+            <TagList tag={tag} />
         </div>
     );
 }

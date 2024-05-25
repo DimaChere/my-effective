@@ -1,6 +1,7 @@
 "use client";
 import { usePathname, useSearchParams, useRouter } from "next/navigation";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+
 export default function UsedTags({ tags }: { tags: string }) {
     const pathname = usePathname();
     const { replace } = useRouter();

@@ -1,4 +1,4 @@
-import { QuoteById, Quotes, Tags } from "./deffinitions";
+import { QuoteById, Quotes, Tags } from "@/lib/deffinitions";
 
 const api = "https://api.quotable.io";
 let tags: Tags[] = [];

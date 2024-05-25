@@ -1,6 +1,5 @@
 import { fetchFilteredQuotes } from "@/lib/data";
-import LikeButton from "./like-button";
-import Quote from "./quote";
+import Quote from "@/components/quote";
 
 export default async function Quotes({
     tags,

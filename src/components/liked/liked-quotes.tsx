@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { fetchLikedQuotes } from "@/lib/data";
-import Quote from "../quote";
+import Quote from "@/components/quote";
 import { QuoteById } from "@/lib/deffinitions";
 
 export default function LikedQuotes() {

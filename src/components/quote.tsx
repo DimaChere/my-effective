@@ -1,5 +1,5 @@
 import { QuoteById, QuoteResult } from "@/lib/deffinitions";
-import LikeButton from "./like-button";
+import LikeButton from "@/components/like-button";
 
 export default function Quote({ quote }: { quote: QuoteResult | QuoteById }) {
     return (
