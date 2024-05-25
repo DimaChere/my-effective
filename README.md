@@ -1,8 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js] project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## React приложение для чтения афоризмов Afforismix
 
-First, run the development server:
+Чтобы запустить development server:
 
 ```bash
 npm run dev
@@ -14,20 +14,22 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000) чтобы увидеть результат.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Задачи
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Сделать React приложение для чтения афоризмов по аналогии с сайтами: https://quotes.thefamouspeople.com/, https://socratify.net/quotes или https://www.goodreads.com/quotes
 
-## Learn More
+Необходимо использовать TypeScript, функциональные компоненты и хуки
 
-To learn more about Next.js, take a look at the following resources:
+Веб приложение должно содержать несколько страниц
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   на главной должны быть представлены лучшие афоризмы из разных категорий (принцип формирования и дословная структура главной не принципиально. главное что б на ней были афоризмы из разных категорий)
+-   кроме главной, должны быть страницы, отображающие афоризмы из конкретной категории (так чтобы у пользователя была возможность просмотреть все афоризмы в данной категории)
+-   также должна быть возможность поставить лайк понравившемуся афоризму. лайки должны сохраняться локально на стороне клиента и сохраняться между сессиями
+-   верстка должна быть резиновой, то есть при изменении размера окна на десктопе и при открытии сайта с мобильного устройства сайт не должен рассыпаться
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+API для получения афоризмов – https://github.com/lukePeavey/quotable#list-quotes
 
 ## Deploy on Vercel
 
