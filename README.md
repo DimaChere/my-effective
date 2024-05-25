@@ -1,4 +1,6 @@
-This is a [Next.js] project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Демонстрация приложения
+
+React приложение расположенно [здесь](https://my-effective.vercel.app/) или по ссылке https://my-effective.vercel.app/, с использованием [Vercel](https://vercel.com/).
 
 ## React приложение для чтения афоризмов Afforismix
 
@@ -30,7 +32,3 @@ bun dev
 -   верстка должна быть резиновой, то есть при изменении размера окна на десктопе и при открытии сайта с мобильного устройства сайт не должен рассыпаться
 
 API для получения афоризмов – https://github.com/lukePeavey/quotable#list-quotes
-
-## Демонстрация приложения
-
-React приложение расположенно [здесь](https://my-effective.vercel.app/) или по ссылке https://my-effective.vercel.app/, с использованием [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
