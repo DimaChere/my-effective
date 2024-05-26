@@ -18,7 +18,7 @@ export default async function Page({
     return (
         <main className="max-w-[1080px] px-7 flex flex-1 flex-col gap-7 items-center mx-auto">
             <div className="w-full flex flex-col items-center">
-                <div className="flex gap-2">
+                <div className="flex flex-col md:flex-row gap-6 md:gap-2">
                     <Search />
                     <UsedTags tags={tags} />
                 </div>

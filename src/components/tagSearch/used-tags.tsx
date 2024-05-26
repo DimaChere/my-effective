@@ -23,7 +23,7 @@ export default function UsedTags({ tags }: { tags: string }) {
     };
 
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-wrap md:flex-col gap-2">
             {tags &&
                 tags.split(",").map((tag) => (
                     <div
