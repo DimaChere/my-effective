@@ -7,7 +7,10 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Afforismix",
+    title: {
+        template: "Afforismix | %s",
+        default: "Afforismix",
+    },
     description: "Site for afforism searching",
     icons: {
         icon: "./favicon.png",

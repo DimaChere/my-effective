@@ -3,6 +3,11 @@ import Quotes from "@/components/quotes";
 import Search from "@/components/tagSearch/search";
 import UsedTags from "@/components/tagSearch/used-tags";
 import { fetchQuotesPages } from "@/lib/data";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Search",
+};
 
 export default async function Page({
     searchParams,

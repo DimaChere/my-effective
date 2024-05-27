@@ -1,6 +1,11 @@
 import { fetchTags } from "@/lib/data";
 import { Tags } from "@/lib/deffinitions";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Tag Info",
+};
 
 export default async function Page() {
     const tags: Tags[] = await fetchTags();

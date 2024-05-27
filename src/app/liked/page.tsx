@@ -1,4 +1,9 @@
 import LikedQuotes from "@/components/liked/liked-quotes";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Liked",
+};
 
 export default function page() {
     return (
