@@ -1,7 +1,7 @@
 import Pagination from "@/components/pagination";
 import Quotes from "@/components/quotes";
-import Search from "@/components/tagSearch/search";
-import UsedTags from "@/components/tagSearch/used-tags";
+import Search from "@/components/tagAfforisms/search";
+import UsedTags from "@/components/tagAfforisms/used-tags";
 import { fetchQuotesPages } from "@/lib/data";
 import { Metadata } from "next";
 

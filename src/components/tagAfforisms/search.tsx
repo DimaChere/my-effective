@@ -2,7 +2,7 @@
 
 import { fetchTags, tagController } from "@/lib/data";
 import { ChangeEvent, Suspense, useEffect, useState } from "react";
-import TagList from "@/components/tagSearch/tag-list";
+import TagList from "@/components/tagAfforisms/tag-list";
 import { useDebouncedCallback } from "use-debounce";
 
 export default function Search() {
